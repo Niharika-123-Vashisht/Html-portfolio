@@ -1,0 +1,670 @@
+<!-- Declares HTML5 document type -->
+<!DOCTYPE html>
+
+<!-- Root HTML tag -->
+<html>
+
+<head>
+
+    <!-- Title shown in browser tab -->
+    <title>Student Admission Form</title>
+
+</head>
+
+<!-- Body starts -->
+<!-- bgcolor sets background color -->
+
+<body bgcolor="#f4f4f4">
+
+    <!-- ================= HEADER SECTION ================= -->
+
+    <!-- center tag aligns content to center -->
+    <center>
+
+        <!-- Main heading -->
+        <h1>
+
+            <!-- font tag changes text color -->
+            <font color="#000080">
+                University Admission Form
+            </font>
+
+        </h1>
+
+        <!-- Sub heading -->
+        <h3>
+
+            <font color="#333333">
+                Academic Year 2026-2027
+            </font>
+
+        </h3>
+
+        <!-- Horizontal line -->
+        <hr width="80%">
+
+    </center>
+
+    <!-- ================= FORM STARTS ================= -->
+
+    <!-- form tag creates form -->
+    <!-- action="#" means same page -->
+    <!-- method="POST" sends form data -->
+    <!-- enctype used for file upload -->
+    <form action="#" method="POST" enctype="multipart/form-data">
+
+        <!-- Main table for form layout -->
+        <table align="center" width="70%" cellpadding="5" cellspacing="5" bgcolor="#ffffff">
+
+            <!-- ================= PERSONAL INFORMATION ================= -->
+
+            <tr>
+
+                <td>
+
+                    <!-- fieldset groups related fields -->
+                    <fieldset>
+
+                        <!-- legend gives title to fieldset -->
+                        <legend>
+                            <h2>Personal Information</h2>
+                        </legend>
+
+                        <!-- Inner table -->
+                        <table width="100%" cellpadding="5" cellspacing="0">
+
+                            <!-- Full Name -->
+                            <tr>
+
+                                <!-- Label column -->
+                                <td width="30%" align="right">
+
+                                    <b>
+                                        <label for="fullName">
+                                            Full Name:
+                                        </label>
+                                    </b>
+
+                                </td>
+
+                                <!-- Input column -->
+                                <td width="70%">
+
+                                    <!-- Text input -->
+                                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name"
+                                        required size="40">
+
+                                </td>
+
+                            </tr>
+
+                            <!-- Father Name -->
+                            <tr>
+
+                                <td align="right">
+
+                                    <b>
+                                        <label for="fatherName">
+                                            Father's Name:
+                                        </label>
+                                    </b>
+
+                                </td>
+
+                                <td>
+
+                                    <input type="text" id="fatherName" name="fatherName"
+                                        placeholder="Enter father's name" required size="40">
+
+                                </td>
+
+                            </tr>
+
+                            <!-- Mother Name -->
+                            <tr>
+
+                                <td align="right">
+
+                                    <b>
+                                        <label for="motherName">
+                                            Mother's Name:
+                                        </label>
+                                    </b>
+
+                                </td>
+
+                                <td>
+
+                                    <input type="text" id="motherName" name="motherName"
+                                        placeholder="Enter mother's name" size="40">
+
+                                </td>
+
+                            </tr>
+
+                            <!-- Date of Birth -->
+                            <tr>
+
+                                <td align="right">
+
+                                    <b>
+                                        <label for="dob">
+                                            Date of Birth:
+                                        </label>
+                                    </b>
+
+                                </td>
+
+                                <td>
+
+                                    <!-- Date input -->
+                                    <input type="date" id="dob" name="dob" required>
+
+                                </td>
+
+                            </tr>
+
+                            <!-- Gender -->
+                            <tr>
+
+                                <td align="right" valign="top">
+
+                                    <b>Gender:</b>
+
+                                </td>
+
+                                <td>
+
+                                    <!-- Male radio -->
+                                    <input type="radio" id="male" name="gender" value="Male" required>
+
+                                    <label for="male">
+                                        Male
+                                    </label>
+
+                                    <br>
+
+                                    <!-- Female radio -->
+                                    <input type="radio" id="female" name="gender" value="Female">
+
+                                    <label for="female">
+                                        Female
+                                    </label>
+
+                                    <br>
+
+                                    <!-- Other radio -->
+                                    <input type="radio" id="other" name="gender" value="Other">
+
+                                    <label for="other">
+                                        Other
+                                    </label>
+
+                                </td>
+
+                            </tr>
+
+                        </table>
+
+                    </fieldset>
+
+                </td>
+
+            </tr>
+
+            <!-- ================= CONTACT INFORMATION ================= -->
+
+            <tr>
+
+                <td>
+
+                    <fieldset>
+
+                        <legend>
+                            <h2>Contact & Address Details</h2>
+                        </legend>
+
+                        <table width="100%" cellpadding="5" cellspacing="0">
+
+                            <!-- Email -->
+                            <tr>
+
+                                <td width="30%" align="right">
+
+                                    <b>
+                                        <label for="email">
+                                            Email Address:
+                                        </label>
+                                    </b>
+
+                                </td>
+
+                                <td width="70%">
+
+                                    <!-- Email validation -->
+                                    <input type="email" id="email" name="email" placeholder="student@example.com"
+                                        required size="40">
+
+                                </td>
+
+                            </tr>
+
+                            <!-- Mobile Number -->
+                            <tr>
+
+                                <td align="right">
+
+                                    <b>
+                                        <label for="mobile">
+                                            Mobile Number:
+                                        </label>
+                                    </b>
+
+                                </td>
+
+                                <td>
+
+                                    <!-- Pattern allows only 10 digits -->
+                                    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}"
+                                        placeholder="10-digit number" required size="40"
+                                        title="Please enter exactly 10 digits">
+
+                                </td>
+
+                            </tr>
+
+                            <!-- Address -->
+                            <tr>
+
+                                <td align="right" valign="top">
+
+                                    <b>
+                                        <label for="address">
+                                            Address:
+                                        </label>
+                                    </b>
+
+                                </td>
+
+                                <td>
+
+                                    <!-- Textarea -->
+                                    <textarea id="address" name="address" rows="5" cols="42"
+                                        placeholder="Enter your full residential address" required></textarea>
+
+                                </td>
+
+                            </tr>
+
+                            <!-- State Dropdown -->
+                            <tr>
+
+                                <td align="right">
+
+                                    <b>
+                                        <label for="state">
+                                            Select State:
+                                        </label>
+                                    </b>
+
+                                </td>
+
+                                <td>
+
+                                    <!-- Dropdown -->
+                                    <select id="state" name="state" required>
+
+                                        <!-- Default option -->
+                                        <option value="" disabled selected>
+                                            -- Select your state --
+                                        </option>
+
+                                        <!-- State options -->
+                                        <option value="Andhra Pradesh">
+                                            Andhra Pradesh
+                                        </option>
+
+                                        <option value="Himachal Pradesh">
+                                            Himachal Pradesh
+                                        </option>
+
+                                        <option value="Punjab">
+                                            Punjab
+                                        </option>
+
+                                        <option value="Uttar Pradesh">
+                                            Uttar Pradesh
+                                        </option>
+
+                                    </select>
+
+                                </td>
+
+                            </tr>
+
+                        </table>
+
+                    </fieldset>
+
+                </td>
+
+            </tr>
+
+            <!-- ================= ACADEMIC INFORMATION ================= -->
+
+            <tr>
+
+                <td>
+
+                    <fieldset>
+
+                        <legend>
+                            <h2>Academic Information</h2>
+                        </legend>
+
+                        <table width="100%" cellpadding="5" cellspacing="0">
+
+                            <!-- Course Dropdown -->
+                            <tr>
+
+                                <td width="30%" align="right">
+
+                                    <b>
+                                        <label for="course">
+                                            Select Course:
+                                        </label>
+                                    </b>
+
+                                </td>
+
+                                <td width="70%">
+
+                                    <select id="course" name="course" required>
+
+                                        <option value="" disabled selected>
+                                            -- Select a course --
+                                        </option>
+
+                                        <option value="B.Tech CSE">
+                                            B.Tech CSE
+                                        </option>
+
+                                        <option value="BCA">
+                                            BCA
+                                        </option>
+
+                                        <option value="MCA">
+                                            MCA
+                                        </option>
+
+                                        <option value="MBA">
+                                            MBA
+                                        </option>
+
+                                        <option value="B.Sc">
+                                            B.Sc
+                                        </option>
+
+                                    </select>
+
+                                </td>
+
+                            </tr>
+
+                            <!-- Admission Confirmed -->
+                            <tr>
+
+                                <td align="right" valign="top">
+
+                                    <b>Admission Confirmed?</b>
+
+                                </td>
+
+                                <td>
+
+                                    <!-- Yes radio -->
+                                    <input type="radio" id="yes" name="admissionConfirmed" value="Yes" required>
+
+                                    <label for="yes">
+                                        Yes
+                                    </label>
+
+                                    <br>
+
+                                    <!-- No radio -->
+                                    <input type="radio" id="no" name="admissionConfirmed" value="No">
+
+                                    <label for="no">
+                                        No
+                                    </label>
+
+                                </td>
+
+                            </tr>
+
+                            <!-- File Upload -->
+                            <tr>
+
+                                <td align="right">
+
+                                    <b>
+                                        <label for="documents">
+                                            Upload Documents:
+                                        </label>
+                                    </b>
+
+                                </td>
+
+                                <td>
+
+                                    <!-- File input -->
+                                    <input type="file" id="documents" name="documents" accept=".pdf, .jpg, .png"
+                                        required>
+
+                                </td>
+
+                            </tr>
+
+                        </table>
+
+                    </fieldset>
+
+                </td>
+
+            </tr>
+
+            <!-- ================= HOBBIES SECTION ================= -->
+
+            <tr>
+
+                <td>
+
+                    <fieldset>
+
+                        <legend>
+                            <h2>Additional Information</h2>
+                        </legend>
+
+                        <table width="100%" cellpadding="5" cellspacing="0">
+
+                            <tr>
+
+                                <td width="30%" align="right" valign="top">
+
+                                    <b>Hobbies:</b>
+
+                                </td>
+
+                                <td width="70%">
+
+                                    <!-- Checkbox -->
+                                    <input type="checkbox" id="hobbyCoding" name="hobbies" value="Coding">
+
+                                    <label for="hobbyCoding">
+                                        Coding
+                                    </label>
+
+                                    <br>
+
+                                    <input type="checkbox" id="hobbyGaming" name="hobbies" value="Gaming">
+
+                                    <label for="hobbyGaming">
+                                        Gaming
+                                    </label>
+
+                                    <br>
+
+                                    <input type="checkbox" id="hobbyReading" name="hobbies" value="Reading">
+
+                                    <label for="hobbyReading">
+                                        Reading
+                                    </label>
+
+                                    <br>
+
+                                    <input type="checkbox" id="hobbyMusic" name="hobbies" value="Music">
+
+                                    <label for="hobbyMusic">
+                                        Music
+                                    </label>
+
+                                </td>
+
+                            </tr>
+
+                        </table>
+
+                    </fieldset>
+
+                </td>
+
+            </tr>
+
+            <!-- ================= PASSWORD SECTION ================= -->
+
+            <tr>
+
+                <td>
+
+                    <fieldset>
+
+                        <legend>
+                            <h2>Account Setup</h2>
+                        </legend>
+
+                        <table width="100%" cellpadding="5" cellspacing="0">
+
+                            <!-- Password -->
+                            <tr>
+
+                                <td width="30%" align="right">
+
+                                    <b>
+                                        <label for="password">
+                                            Password:
+                                        </label>
+                                    </b>
+
+                                </td>
+
+                                <td width="70%">
+
+                                    <input type="password" id="password" name="password" placeholder="Create a password"
+                                        required size="40">
+
+                                </td>
+
+                            </tr>
+
+                            <!-- Confirm Password -->
+                            <tr>
+
+                                <td align="right">
+
+                                    <b>
+                                        <label for="confirmPassword">
+                                            Confirm Password:
+                                        </label>
+                                    </b>
+
+                                </td>
+
+                                <td>
+
+                                    <input type="password" id="confirmPassword" name="confirmPassword"
+                                        placeholder="Confirm your password" required size="40">
+
+                                </td>
+
+                            </tr>
+
+                        </table>
+
+                    </fieldset>
+
+                </td>
+
+            </tr>
+
+            <!-- ================= BUTTONS SECTION ================= -->
+
+            <tr>
+
+                <td align="center">
+
+                    <br>
+
+                    <!-- Submit button -->
+                    <input type="submit" value="Submit Application">
+
+                    <!-- Space -->
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <!-- Reset button -->
+                    <input type="reset" value="Reset Form">
+
+                    <br><br>
+
+                </td>
+
+            </tr>
+
+        </table>
+
+        <!-- Main table ends -->
+
+    </form>
+
+    <!-- ================= FOOTER SECTION ================= -->
+
+    <center>
+
+        <br>
+
+        <!-- Back link -->
+        <a href="index.html">
+            Back to Home
+        </a>
+
+        <br><br>
+
+    </center>
+    <!-- Ordered List -->
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <!-- Unordered List -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 4</li>
+        <li>Item 3</li>
+    </ul>
+
+
+
+</body>
+
+</html>
